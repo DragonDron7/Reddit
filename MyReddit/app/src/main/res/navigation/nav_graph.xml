@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/onBoardingFragment">
+
+    <fragment
+        android:id="@+id/onBoardingFragment"
+        android:name="com.dronios777.myreddit.view.onboarding.OnBoardingFragment"
+        tools:layout="@layout/fragment_onboarding">
+        <action
+            android:id="@+id/action_onBoardingFragment_to_authFragment"
+            app:destination="@id/authFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/authFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/authFragment"
+        android:name="com.dronios777.myreddit.view.authorization.AuthFragment"
+        tools:layout="@layout/fragment_auth">
+        <deepLink
+            android:id="@+id/code"
+            app:uri="project://humblr777_reddit/dronios777?code={code}" />
+
+        <argument
+            android:name="code"
+            android:defaultValue=""
+            app:argType="string" />
+
+        <action
+            android:id="@+id/action_authFragment_to_subredditsFragment"
+            app:destination="@id/subredditsFragment"
+            app:launchSingleTop="true"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/subredditsFragment"
+        android:name="com.dronios777.myreddit.view.subreddits.SubredditsFragment"
+        tools:layout="@layout/fragment_subreddits">
+        <action
+            android:id="@+id/action_subredditsFragment_to_subredditPostsFragment"
+            app:destination="@id/subredditPostsFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/myProfileFragment"
+        android:name="com.dronios777.myreddit.view.profile.MyProfileFragment"
+        tools:layout="@layout/fragment_my_profile" />
+    <fragment
+        android:id="@+id/subredditPostsFragment"
+        android:name="com.dronios777.myreddit.view.posts.SubredditPostsFragment"
+        android:label="fragment_subreddit_posts"
+        tools:layout="@layout/fragment_subreddit_posts">
+        <action
+            android:id="@+id/action_subredditPostsFragment_to_subredditsFragment"
+            app:destination="@id/subredditsFragment"
+            app:launchSingleTop="true"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_subredditPostsFragment_to_commentsFragment"
+            app:destination="@id/commentsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favouritesFragment"
+        android:name="com.dronios777.myreddit.view.favourites.FavouritesFragment"
+        android:label="fragment_favourites"
+        tools:layout="@layout/fragment_favourites">
+        <action
+            android:id="@+id/action_favouritesFragment_to_subredditPostsFragment"
+            app:destination="@id/subredditPostsFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/commentsFragment"
+        android:name="com.dronios777.myreddit.view.posts.comments.CommentsFragment"
+        android:label="fragment_comments"
+        tools:layout="@layout/fragment_comments" />
+    <fragment
+        android:id="@+id/userFragment"
+        android:name="com.dronios777.myreddit.view.user_info.UserFragment"
+        android:label="fragment_user"
+        tools:layout="@layout/fragment_user" />
+</navigation>

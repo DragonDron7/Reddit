@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">Humblr</string>
+
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <!--онбординг-->
+    <string name="app_name_description">Find like-minded people with Humblr</string>
+    <string name="humblr_text">Humblr</string>
+    <string name="skip">Skip</string>
+    <string name="ready">Sign in</string><!--войти-->
+    <!--список заголовков для экранов онбординга -->
+    <string-array name="onboarding_titles_array">
+        <item>Welcome to Humblr</item>
+        <item>SubHumblr</item>
+        <item>Share and save</item>
+    </string-array>
+    <!--список описаний для экранов онбординга -->
+    <string-array name="onboarding_description_array">
+        <item>Here are communities of all kinds of interests</item>
+        <item>You can find new subs by interests and see the subs you subscribe to</item>
+        <item>Favorites tab stores bookmarks with comments and subs. In your profile you will find information about yourself</item>
+    </string-array>
+    <!--авторизация-->
+    <string name="log_in">Sign up</string><!--зарегистрироваться-->
+    <string name="auth_success">Successful autorisation</string>
+    <!--сабреддиты-->
+    <string name="search_menu">search from all subreddits</string>
+    <string name="btn_subreddits_new_txt">New</string>
+    <string name="btn_subreddits_popular_txt">Popular</string>
+    <string name="subscribers_text">subscribers:</string>
+
+    <string name="subJoin_title">Are you sure want to join?</string>
+    <string name="subLeave_title">Are you sure want to leave?</string>
+    <string name="subJoin_message">Join to</string>
+    <string name="subLeave_message">Leave to</string>
+    <!--посты-->
+    <string name="button_joined_text">Joined</string>
+    <string name="button_join_text">Join</string>
+    <!--избранное-->
+    <string name="btn_favourites_sub_txt">Community</string>
+    <string name="btn_favourites_posts_txt">Posts</string>
+    <string name="mes_txt_noSelect">Nothing selected</string>
+
+    <!--профайл-->
+    <string name="profile_fragment_title">Profile</string>
+    <string name="logout">Logout</string>
+    <string name="logout_title">Are you sure you want to logout?</string>
+    <string name="logout_message">All local data will be deleted.</string>
+
+
+    <string name="image_error">image_error</string>
+    <string name="error_text">Error! Check network status.</string>
+    <string name="awardee_karma">Awardee karma</string>
+    <string name="comment_karma">Comment karma</string>
+    <string name="awarder_karma">Awarder karma</string>
+    <string name="post_karma">Post karma</string>
+    <string name="friends">Friends:</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_a_friend">Add a friend</string>
+    <string name="remove_friend">Remove from friend</string>
+    <string name="btn_friend_list">List of Friends</string>
+
+
+</resources>
