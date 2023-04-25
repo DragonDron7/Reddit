@@ -35,3 +35,10 @@ DragonDron7 (Андрей)
 * Glide
 * Swipe
 * Hilt
+
+## Гифки
+![Onboarding](https://github.com/DragonDron7/MyProjects/blob/main/gifs/slide1.gif "Онбординг")
+![](https://github.com/DragonDron7/MyProjects/blob/main/gifs/slide1_.gif)
+![](https://github.com/DragonDron7/MyProjects/blob/main/gifs/slide2.gif)
+![](https://github.com/DragonDron7/MyProjects/blob/main/gifs/slide3.gif)
+
