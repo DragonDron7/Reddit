@@ -24,14 +24,17 @@ DragonDron7 (Андрей)
 * Выход из профиля (с удалением данных о пользователе на устройстве)
 
 ## Стек технологий
-* Reddit API
-* Android studio
+* Android SDK
+* Fragment
 * Kotlin
-* Clean Architecture
+* MVVM
+* ViewModel
+* Kotlin Coroutines
+* LiveData
+* Reddit API
 * Retrofit2
-* Coroutines
 * Paging library3
-* Jetpack Navigation
+* Navigation Components
 * Glide
 * Swipe
 * Hilt
